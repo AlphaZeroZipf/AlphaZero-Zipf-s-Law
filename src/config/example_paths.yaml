@@ -1,0 +1,10 @@
+
+paths:
+  models_dir: './models/'
+  plot_data: './plot_data/'
+
+game_paths:
+  connect_four: 'connect_four/'
+  pentago: 'pentago/'
+  oware: 'oware/'
+  checkers: 'checkers/'

@@ -1,0 +1,15 @@
+---
+ 
+games: ['connect_four', 'pentago', 'oware', 'checkers']
+
+action_formats:
+  connect_four: '[xo][0-6]'
+  pentago: '[a-f][1-6][s-z]'
+  oware: '[A-F,a-f]'
+  checkers: '[a-h][1-8][a-h][1-8]'
+
+approx_training_length:
+    connect_four: 70_000
+    pentago: 50_000
+    oware: 10_000
+    checkers: 10_000
