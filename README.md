@@ -1,4 +1,7 @@
-# Paper code
+# Code and data for "AlphaZero Neural Scaling and Zipf's Law: a Tale of Board Games and Power Laws"
+
+We provide here all the resources needed to reproduce all experiments in the paper.
+The data is provided in a dedicated release, and should be unpacked before running (e.g. in a folder `plot_data` next to the project folder).
 
 To set up and run all experiments, go to the project folder and run:
 ```
@@ -6,14 +9,14 @@ poetry install
 poetry shell
 python -m src.generate_all_plots
 ```
-This will save all plots in the paper saved to `plots`. The default is using saved data to generate all results.
-To run all experiments from scratch, change the flag `load_data` to `False`. Doing so can take several hours to generate all plots.
+This will save all plots in the paper saved to the `plots` dir. The default is using saved data to generate all results.
+To run all experiments from scratch, change the flag `load_data` to `False`. Doing so can take several hours to generate all plots. See further instructions in [Generating all results from scratch](#generating-all-results-from-scratch).
 
-Note: running all experiments can take several hours, it is recommended that you run them individually by calling their respective function from `generate_all_plots.py`.
+Note: running all experiments can take several hours and it is recommended to run them individually. Each experiment is contained in a single function in `generate_all_plots.py`.
 
 ## Hardware requirements
 
-All experiments ran on a single node with 64 CPU cores and 125Gi RAM.
+All experiments were done on a single node with 64 CPU cores and 125Gi RAM.
 
 ## Generating all results from scratch
 
