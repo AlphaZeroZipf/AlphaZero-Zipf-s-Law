@@ -15,7 +15,7 @@ plt.style.use(['science','nature'])
 
 checkers_symbols = {'o': 'P', '+': 'p', '8': 'K', '*': 'k'}
 
-def checkers_to_fen(checkers_position):
+def checkers_to_fen(checkers_position: str) -> str:
     """
     Convert a checkers position string to a chess FEN string.
     """
